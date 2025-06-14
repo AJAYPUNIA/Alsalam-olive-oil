@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Products - Alsalam Olive Oil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #556B2F;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .benefits, .sizes {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .benefits ul {
+            list-style: circle;
+            padding-left: 20px;
+        }
+
+        .product-img {
+            display: block;
+            margin: 20px auto;
+            max-width: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Alsalam Olive Oil</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/services">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<div class="header">
+    <h1>Our Olive Oil Products</h1>
+    <p>Premium Quality • 100% Natural • From Jordan</p>
+</div>
+
+<!-- Benefits -->
+<section class="benefits">
+    <h3>🌿 Benefits of Using Olive Oil</h3>
+    <ul>
+        <li>Rich in healthy monounsaturated fats</li>
+        <li>Contains large amounts of antioxidants</li>
+        <li>Anti-inflammatory properties</li>
+        <li>Protective against heart disease</li>
+        <li>Supports skin and brain health</li>
+    </ul>
+    <img src="{{ url_for('static', filename='benefits.jpeg') }}" alt="Benefits of Olive Oil" class="product-img">
+</section>
+
+<!-- Sizes -->
+<!-- Sizes -->
+<section class="sizes">
+    <h3>🛒 Available Sizes & Pricing</h3>
+    <ul>
+        <li>1 Liter - Virgin Olive Oil — <strong>$19.99</strong></li>
+        <li>2 Liter - Virgin Olive Oil — <strong>$34.99</strong></li>
+        <li>4 Liter - Virgin Olive Oil — <strong>$64.99</strong></li>
+        <li>8 Liter - Virgin Olive Oil — <strong>$124.99</strong></li>
+    </ul>
+    <img src="{{ url_for('static', filename='packaging.jpeg') }}" alt="Olive Oil Packaging" class="product-img">
+</section>
+
+</body>
+</html>
